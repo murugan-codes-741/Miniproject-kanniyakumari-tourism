@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivekananda Rock Memorial | Kanniyakumari</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Photo Sphere Viewer CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/vivekananda-rock.css">
+    
+</head>
+<body class="rock-page">
+
+    <!-- Hero Section -->
+    <header class="rock-hero" style="background-image: url('assets/vivekananda_rock.png');">
+        <a href="index.html" class="back-btn">
+            <span>&larr;</span> Back to Home
+        </a>
+        <div class="rock-hero-content fade-in-section is-visible">
+            <span class="badge-outline">Virtual Walk Available</span>
+            <h1>Vivekananda Rock Memorial</h1>
+            <p>Walk the sacred island where Swami Vivekananda attained enlightenment</p>
+        </div>
+    </header>
+
+    <!-- Info Row -->
+    <div class="info-row">
+        <div class="glass-card info-card tilt-card" data-tilt>
+            <h4>Ferry Timing</h4>
+            <p>7:00 AM – 5:00 PM</p>
+        </div>
+        <div class="glass-card info-card tilt-card" data-tilt>
+            <h4>Entry Fee</h4>
+            <p>₹20 (Indian), ₹200 (Foreign)</p>
+        </div>
+        <div class="glass-card info-card tilt-card" data-tilt>
+            <h4>Ferry Ride</h4>
+            <p>10 minutes from shore</p>
+        </div>
+        <div class="glass-card info-card tilt-card" data-tilt>
+            <h4>Built</h4>
+            <p>1970</p>
+        </div>
+    </div>
+
+    <!-- Virtual Walk Section -->
+    <section class="section">
+        <div class="section-container">
+            <h2 class="section-title">Virtual Walk</h2>
+            <p class="section-subtext">Select a location to explore the 360° view</p>
+            
+            <div class="interactive-walk-container">
+                <div class="hotspots-panel glass-card">
+                    <h3>Locations</h3>
+                    <ul class="hotspot-list">
+                        <li class="active" data-location="mandapam">Mandapam (Meditation Hall)</li>
+                        <li data-location="shripada">Shripada Mandapam (Sacred Footprint)</li>
+                        <li data-location="main-hall">Main Memorial Hall</li>
+                        <li data-location="statue-view">Thiruvalluvar Statue View Point</li>
+                    </ul>
+                </div>
+                <div class="viewer-wrapper">
+                    <div id="photosphere" class="viewer-container"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" style="padding-top: 0;">
+        <div class="section-container">
+            <div class="rock-content-grid">
+                
+                <!-- Description -->
+                <div class="glass-card">
+                    <h3 style="color: var(--accent-amber); font-size: 2rem; margin-bottom: 1rem;">The Rock of Enlightenment</h3>
+                    <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8;">
+                        Vivekananda Rock Memorial stands on a small island about 500 metres off the coast of Kanniyakumari. It was here that Swami Vivekananda swam to meditate in December 1892, before his historic address at the Parliament of Religions in Chicago. The memorial, built in 1970, beautifully blends Tamil and traditional Indian architecture. The main hall features a grand statue of Swami Vivekananda and the walls are carved with inspiring quotes.
+                    </p>
+                </div>
+                
+                <!-- Tips -->
+                <div class="glass-card">
+                    <h3 style="color: var(--accent-amber); font-size: 2rem; margin-bottom: 1rem;">Traveler Tips</h3>
+                    <ul class="tips-list">
+                        <li>Reach ferry point by 7:00 AM to avoid long queues</li>
+                        <li>Remove footwear before entering the mandapam</li>
+                        <li>Photography allowed outside, not inside halls</li>
+                        <li>Carry water — no shops on the rock</li>
+                        <li>Allow 1.5 to 2 hours for the full visit</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History & Steps Section -->
+    <section class="section" style="padding-top: 0;">
+        <div class="section-container">
+            <div class="rock-content-grid">
+                
+                <!-- History Timeline -->
+                <div class="glass-card">
+                    <h3 style="color: var(--accent-amber); font-size: 2rem; margin-bottom: 1.5rem;">History Timeline</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">1892</div>
+                            <div class="timeline-content">Swami Vivekananda meditates on the rock</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1893</div>
+                            <div class="timeline-content">His Chicago speech changes the world</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1963</div>
+                            <div class="timeline-content">Eknath Ranade proposes the memorial</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1970</div>
+                            <div class="timeline-content">Memorial inaugurated by President V.V. Giri</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">Today</div>
+                            <div class="timeline-content">3,000+ visitors per day</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Follow Steps -->
+                <div class="glass-card">
+                    <h3 style="color: var(--accent-amber); font-size: 2rem; margin-bottom: 1.5rem;">Virtual Walk Steps</h3>
+                    <ol class="steps-list">
+                        <li>Board the ferry at Kanniyakumari pier</li>
+                        <li>Arrive at the rock island</li>
+                        <li>Enter the main gateway</li>
+                        <li>Visit Shripada Mandapam</li>
+                        <li>Explore the main memorial hall</li>
+                        <li>Meditate in the Dhyana Mandapam</li>
+                        <li>View Thiruvalluvar Statue from the rock</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content" style="text-align: center; padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2rem;">
+            <a href="index.html" class="logo footer-logo">Kanniya<span class="logo-accent">Kumari</span></a>
+            <p class="footer-tagline" style="color: var(--text-muted); margin-top: 0.5rem;">Southernmost tip of India — Where three seas meet</p>
+        </div>
+    </footer>
+
+    <!-- Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/three/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="js/vivekananda-rock.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise at Three Seas | Kanniyakumari</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/sunrise.css">
+    
+    <!-- Photo Sphere Viewer CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css" />
+</head>
+<body class="sunrise-page">
+
+    <!-- Hero Section -->
+    <header class="sunrise-hero" style="background-image: url('assets/sunset_panorama.png');">
+        <a href="index.html" class="back-btn">
+            <span>&larr;</span> Back to Home
+        </a>
+        <div class="sunrise-hero-content fade-in-section is-visible">
+            <span class="badge-outline">360° Experience N</span>
+            <h1>Sunrise at Three Seas</h1>
+            <p>Watch the sun rise where the Arabian Sea, Bay of Bengal and Indian Ocean meet.</p>
+        </div>
+    </header>
+
+    <!-- Info Row -->
+    <div class="info-row">
+        <div class="glass-card info-card tilt-card" data-tilt>
+            <h4>Best Time</h4>
+            <p>5:30 AM – 6:30 AM</p>
+        </div>
+        <div class="glass-card info-card tilt-card" data-tilt>
+            <h4>Season</h4>
+            <p>October to March</p>
+        </div>
+        <div class="glass-card info-card tilt-card" data-tilt>
+            <h4>Location</h4>
+            <p>Kanniyakumari Shore</p>
+        </div>
+        <div class="glass-card info-card tilt-card" data-tilt>
+            <h4>Entry</h4>
+            <p>Free</p>
+        </div>
+    </div>
+
+    <!-- 360° Viewer Section -->
+    <section class="section viewer-section" style="padding-bottom: 0;">
+        <div class="section-container" style="text-align: center;">
+            <h2 class="section-title" style="margin-bottom: 0.5rem;">Experience 360° Sunrise</h2>
+            <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1.1rem;">Stand virtually at the shore and watch the golden sun rise over three seas</p>
+            <div id="viewer" class="glass-card" style="width: 100%; height: 60vh; border-radius: 16px; overflow: hidden; padding: 0;"></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-container">
+            
+            
+            <div class="sunrise-content-grid">
+                <!-- About Description -->
+                <div class="glass-card">
+                    <h3 style="color: var(--accent-amber); font-size: 2rem; margin-bottom: 1rem;">The Most Sacred Sunrise in India</h3>
+                    <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8;">
+                        Kanniyakumari is one of the few places on Earth where you can witness both sunrise and sunset over the sea. Every morning, thousands of pilgrims and tourists gather at the shoreline to witness the breathtaking moment when the sun emerges from the meeting point of three great oceans. On full moon days, you can even see the moonset and sunrise simultaneously — a once-in-a-lifetime experience.
+                    </p>
+                </div>
+                
+                <!-- Tips Section -->
+                <div class="glass-card">
+                    <h3 style="color: var(--accent-amber); font-size: 2rem; margin-bottom: 1rem;">Traveler Tips</h3>
+                    <ul class="tips-list">
+                        <li>Arrive by 5:00 AM to get a good spot along the viewing gallery.</li>
+                        <li>Carry a light shawl — the ocean breeze can be unexpectedly cool.</li>
+                        <li>Best viewed from the main shore beach near the Cape.</li>
+                        <li>Full moon day sunrise is an extra special event.</li>
+                        <li>Avoid the peak monsoon season (June–September) for clear views.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Nearby Places Row -->
+    <section class="section" style="padding-top: 0;">
+        <div class="section-container">
+            <h2 class="section-title">Nearby Places</h2>
+            <div class="places-grid" style="margin-top: 2rem;">
+                 <div class="glass-card place-card tilt-card">
+                    <h3>Vivekananda Rock Memorial</h3>
+                    <p>Meditation hall on an island rock.</p>
+                    <button class="btn btn-outline" style="padding: 0.5rem 1rem;">Explore</button>
+                </div>
+                <div class="glass-card place-card tilt-card">
+                    <h3>Gandhi Memorial</h3>
+                    <p>Where Mahatma's ashes were kept.</p>
+                    <button class="btn btn-outline" style="padding: 0.5rem 1rem;">Explore</button>
+                </div>
+                <div class="glass-card place-card tilt-card">
+                    <h3>Bhagavathy Amman Temple</h3>
+                    <p>3000-year-old historic sanctuary.</p>
+                    <button class="btn btn-outline" style="padding: 0.5rem 1rem;">Explore</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="index.html" class="logo footer-logo">Kanniya<span class="logo-accent">Kumari</span></a>
+            <p class="footer-tagline">Southernmost tip of India — Where three seas meet</p>
+        </div>
+    </footer>
+
+    <!-- We can reuse tilt functionality if it's external, but we'll include main.js if needed -->
+    <!-- Assuming tilt logic was embedded or included. Let's include vanilla-tilt if it was missing or relied upon -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    
+    <!-- Photo Sphere Viewer Scripts -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js",
+                "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.module.js",
+                "@photo-sphere-viewer/little-planet-adapter": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/little-planet-adapter/index.module.js"
+            }
+        }
+    </script>
+    <script type="module">
+        import { Viewer } from '@photo-sphere-viewer/core';
+        import { LittlePlanetAdapter } from '@photo-sphere-viewer/little-planet-adapter';
+
+        const viewer = new Viewer({
+            container: document.querySelector('#viewer'),
+            adapter: [LittlePlanetAdapter, {
+               size: 1000 // You can customize the little planet size
+            }],
+            panorama: 'assets/sunrise_ocean.png',
+            defaultZoomLvl: 0,
+            navbar: [
+                'zoom',
+                'move',
+                'caption',
+                'fullscreen',
+            ]
+        });
+    </script>
+</body>
+</html>

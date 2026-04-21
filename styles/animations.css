@@ -1,0 +1,77 @@
+/* Keyframe Animations */
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(239, 159, 39, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(239, 159, 39, 0.8), 0 0 50px rgba(216, 90, 48, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(239, 159, 39, 0.4);
+  }
+}
+
+@keyframes pinpointPulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes floatElement {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes rotatePortalRing1 {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes rotatePortalRing2 {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(-360deg); }
+}
+
+/* Applying Animation Classes */
+.portal-ring.ring-1 {
+  animation: rotatePortalRing1 20s linear infinite;
+  border-style: dashed;
+}
+
+.portal-ring.ring-2 {
+  animation: rotatePortalRing2 15s linear infinite;
+  border-style: dotted;
+}
+
+.portal-ring.ring-3 {
+  animation: rotatePortalRing1 10s linear infinite;
+}
+
+.floating {
+  animation: floatElement 6s ease-in-out infinite;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+}

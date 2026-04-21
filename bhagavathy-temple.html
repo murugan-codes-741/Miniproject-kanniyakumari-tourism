@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhagavathy Amman Temple | Virtual Darshan</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Photo Sphere Viewer CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/bhagavathy-temple.css">
+    
+</head>
+<body class="temple-page">
+
+    <!-- Audio Element -->
+    <audio id="temple-bell-audio" loop>
+        <source src="https://www.soundjay.com/misc/sounds/bell-ringing-04.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="audio-control-container">
+        <button id="btn-audio-toggle" class="btn-audio" title="Play Temple Bell">
+            🔔 <span id="audio-status">Audio Off</span>
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="temple-hero" style="background-image: url('assets/bhagavathy_temple.png');">
+        <a href="index.html" class="back-btn">
+            <span>&larr;</span> Back to Home
+        </a>
+        <div class="temple-hero-content fade-in-section is-visible">
+            <span class="badge-outline">Virtual Darshan Available</span>
+            <h1>Bhagavathy Amman Temple</h1>
+            <p>Experience the divine presence of Devi Kanyakumari at the land's end</p>
+        </div>
+    </header>
+
+    <!-- Info Row -->
+    <div class="info-row">
+        <div class="glass-card info-card tilt-card" data-tilt>
+            <h4>Darshan Hours</h4>
+            <p>4:30 AM – 12 PM, 4 – 8 PM</p>
+        </div>
+        <div class="glass-card info-card tilt-card" data-tilt>
+            <h4>Deity</h4>
+            <p>Goddess Kanyakumari (Parvathi)</p>
+        </div>
+        <div class="glass-card info-card tilt-card" data-tilt>
+            <h4>Age</h4>
+            <p>Over 3,000 years old</p>
+        </div>
+        <div class="glass-card info-card tilt-card" data-tilt>
+            <h4>Dress Code</h4>
+            <p>Traditional required</p>
+        </div>
+    </div>
+
+    <!-- Virtual Darshan Section -->
+    <section class="section">
+        <div class="section-container">
+            <h2 class="section-title">Virtual Darshan</h2>
+            <p class="section-subtext fade-in-section">Feel the divine atmosphere of this ancient coastal temple from wherever you are</p>
+            
+            <div class="viewer-container fade-in-section">
+                <div id="photosphere"></div>
+                <div class="disclaimer-bar">
+                    <p><strong>Disclaimer:</strong> Inner sanctum photography not permitted — virtual darshan shows outer areas only.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" style="padding-top: 0;">
+        <div class="section-container">
+            <div class="temple-content-grid">
+                
+                <!-- Description -->
+                <div class="glass-card fade-in-section">
+                    <h3 class="card-heading">The Goddess at the Edge of India</h3>
+                    <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8;">
+                        The Bhagavathy Amman Temple is one of the 108 Shakti Peethas of India and is dedicated to Goddess Kanyakumari, a form of Goddess Parvathi. The temple stands at the very tip of the Indian subcontinent, with the ocean on three sides. The nose ring (Mookuthi) of the Goddess is said to be so brilliantly jewelled that it can be seen from the sea, and ships once used it as a navigation landmark. The eastern gateway of the temple remains closed to prevent the jewel's light from distracting sailors.
+                    </p>
+                </div>
+                
+                <!-- Rules -->
+                <div class="glass-card fade-in-section">
+                    <h3 class="card-heading">Temple Rules</h3>
+                    <ul class="check-list">
+                        <li>Men must wear dhoti or mundu (no pants inside)</li>
+                        <li>Women must wear saree or churidar</li>
+                        <li>Photography strictly prohibited inside</li>
+                        <li>Mobile phones must be kept outside</li>
+                        <li>Non-Hindus: allowed in outer premises only</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timings and Festivals Section -->
+    <section class="section" style="padding-top: 0;">
+        <div class="section-container">
+            <div class="temple-content-grid">
+                
+                <!-- Timings -->
+                <div class="glass-card fade-in-section" style="padding: 2.5rem;">
+                    <h3 class="card-heading">Darshan Timings</h3>
+                    
+                    <div class="timings-block">
+                        <h4 style="color: white; margin-bottom: 0.5rem; font-family: var(--font-body); font-size: 1.2rem;">Morning</h4>
+                        <div class="timing-item">
+                            <span class="time">4:30 AM</span>
+                            <span class="ritual">Thiruvanandal (opening ritual)</span>
+                        </div>
+                        <div class="timing-item">
+                            <span class="time">5:30 AM</span>
+                            <span class="ritual">Abhishekam</span>
+                        </div>
+                        <div class="timing-item">
+                            <span class="time">7:00 AM – 12:00 PM</span>
+                            <span class="ritual">General darshan</span>
+                        </div>
+                    </div>
+
+                    <div class="timings-block" style="margin-top: 2rem;">
+                        <h4 style="color: white; margin-bottom: 0.5rem; font-family: var(--font-body); font-size: 1.2rem;">Evening</h4>
+                        <div class="timing-item">
+                            <span class="time">4:00 PM</span>
+                            <span class="ritual">Temple reopens</span>
+                        </div>
+                        <div class="timing-item">
+                            <span class="time">6:00 PM</span>
+                            <span class="ritual">Deeparadhana</span>
+                        </div>
+                        <div class="timing-item">
+                            <span class="time">8:00 PM</span>
+                            <span class="ritual">Temple closes</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Festivals & Tips -->
+                <div style="display: flex; flex-direction: column; gap: 2rem;">
+                     <!-- Festivals -->
+                    <div class="glass-card fade-in-section">
+                        <h3 class="card-heading">Festivals at This Temple</h3>
+                        <ul class="festival-list">
+                            <li><strong>Navarathri</strong> — 9-day grand celebration</li>
+                            <li><strong>Puthandu</strong> — Tamil New Year special puja</li>
+                            <li><strong>Vaikasi Visakam</strong> — chariot festival</li>
+                            <li><strong>Chithirai Pournami</strong> — full moon festival</li>
+                        </ul>
+                    </div>
+
+                    <!-- Tips -->
+                    <div class="glass-card fade-in-section" style="flex-grow: 1;">
+                        <h3 class="card-heading">Traveler Tips</h3>
+                        <ul class="check-list check-orange">
+                            <li>Visit during Deeparadhana (6 PM) for best experience</li>
+                            <li>Tuesday and Friday — most auspicious days</li>
+                            <li>Avoid weekends — very crowded</li>
+                            <li>Book special puja tickets at temple counter</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content" style="text-align: center; padding: 2rem 0; margin-top: 2rem;">
+            <a href="index.html" class="logo footer-logo">Kanniya<span class="logo-accent">Kumari</span></a>
+            <p class="footer-tagline" style="color: var(--text-muted); margin-top: 0.5rem;">Southernmost tip of India — Where three seas meet</p>
+        </div>
+    </footer>
+
+    <!-- Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/three/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="js/bhagavathy-temple.js"></script>
+</body>
+</html>

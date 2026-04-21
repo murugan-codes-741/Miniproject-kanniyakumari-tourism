@@ -1,0 +1,184 @@
+/* Sunset Page Styles */
+
+/* Font Overrides for the Sunset Detail Page */
+.sunset-page body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.sunset-page h1, .sunset-page h2, .sunset-page h3, .sunset-page h4, .sunset-page h5, .sunset-page h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Hero Section */
+.sunset-hero {
+  height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--bg-dark);
+}
+
+.sunset-hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(180deg, rgba(4,44,83,0.3) 0%, rgba(4,44,83,0.95) 100%);
+  z-index: 1;
+}
+
+.sunset-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.badge-outline {
+  display: inline-block;
+  border: 1px solid var(--accent-orange);
+  color: var(--accent-orange);
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.sunset-hero h1 {
+  font-size: 5rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.sunset-hero p {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+}
+
+.back-btn {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.back-btn:hover {
+  transform: translateX(-5px);
+  color: var(--accent-orange);
+}
+
+/* Info Row */
+.info-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: -3rem;
+  position: relative;
+  z-index: 5;
+  padding: 0 10%;
+}
+
+.info-card {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.info-card h4 {
+  color: var(--accent-orange);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info-card p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* 360 Viewer Section */
+.viewer-container {
+  width: 100%;
+  height: 60vh;
+  min-height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 3rem 0;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  border: 1px solid var(--glass-border);
+}
+
+#photosphere {
+  width: 100%;
+  height: 100%;
+}
+
+/* Tips & About List */
+.tips-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tips-list li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}
+
+.tips-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent-orange);
+  font-weight: bold;
+}
+
+/* About Layout */
+.sunset-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+/* Places Grid */
+.places-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.place-card {
+  text-align: left;
+}
+
+.place-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.place-card p {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .sunset-hero h1 { font-size: 3rem; }
+  .sunset-content-grid { grid-template-columns: 1fr; }
+  .info-row { margin-top: 2rem; }
+}

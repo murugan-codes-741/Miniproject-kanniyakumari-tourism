@@ -1,0 +1,270 @@
+/* Bhagavathy Amman Temple Page Styles */
+
+/* Base overrides taking font requests into account */
+.temple-page body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-main);
+  background-color: var(--bg-dark);
+}
+
+.temple-page h1, .temple-page h2, .temple-page h3, .temple-page h4, .temple-page h5, .temple-page h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Audio Control */
+.audio-control-container {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  z-index: 200;
+}
+
+.btn-audio {
+  background: rgba(4, 44, 83, 0.6);
+  border: 1px solid var(--accent-amber);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-audio:hover {
+  background: rgba(239, 159, 39, 0.2);
+  box-shadow: 0 0 10px rgba(239,159,39,0.3);
+}
+
+/* Hero Section */
+.temple-hero {
+  height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--bg-dark);
+}
+
+.temple-hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(180deg, rgba(4,44,83,0.3) 0%, rgba(4,44,83,0.95) 100%);
+  z-index: 1;
+}
+
+.temple-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.badge-outline {
+  display: inline-block;
+  border: 1px solid var(--accent-orange);
+  color: #fff;
+  background-color: rgba(216, 90, 48, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(5px);
+}
+
+.temple-hero h1 {
+  font-size: 5rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.temple-hero p {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+}
+
+.back-btn {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.back-btn:hover {
+  transform: translateX(-5px);
+  color: var(--accent-orange);
+}
+
+/* Info Row */
+.info-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: -3rem;
+  position: relative;
+  z-index: 5;
+  padding: 0 10%;
+}
+
+.info-card {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.info-card h4 {
+  color: var(--accent-orange);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info-card p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* 360 Viewer Section */
+.viewer-container {
+  width: 100%;
+  height: 60vh;
+  min-height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 2rem 0;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  border: 1px solid var(--glass-border);
+  position: relative;
+}
+
+#photosphere {
+  width: 100%;
+  height: calc(100% - 40px); /* Leave room for disclaimer */
+}
+
+.disclaimer-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--bg-darker);
+  color: var(--accent-amber);
+  padding: 0.6rem 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  border-top: 1px solid var(--glass-border);
+}
+
+/* Layout */
+.temple-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.card-heading {
+  color: var(--accent-orange);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Check Lists */
+.check-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.check-list li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}
+
+.check-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent-amber);
+  font-weight: bold;
+}
+
+.check-orange li::before {
+  color: var(--accent-orange);
+}
+
+/* Timings */
+.timing-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  border-bottom: 1px dashed rgba(255,255,255,0.2);
+  color: var(--text-muted);
+}
+
+.timing-item:last-child {
+  border-bottom: none;
+}
+
+.timing-item .time {
+  font-weight: 500;
+  color: var(--accent-amber);
+  width: 150px;
+}
+
+/* Festivals */
+.festival-list {
+  list-style: none;
+  padding-left: 0;
+}
+.festival-list li {
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.festival-list li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent-orange);
+  font-size: 1rem;
+}
+
+.festival-list strong {
+  color: #fff;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .temple-content-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .temple-hero h1 { font-size: 3rem; }
+  .info-row { margin-top: 2rem; }
+  .timing-item { flex-direction: column; gap: 0.3rem; }
+}

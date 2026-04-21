@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step Into Kanniyakumari | 3D Virtual Tourism</title>
+    <meta name="description"
+        content="A virtual journey to India's southernmost tip — where three seas kiss the sky. Experience 360° views, 3D parallax, and the majestic Kanniyakumari.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/sections.css">
+</head>
+
+<body>
+    <!-- Sticky Glass Navbar -->
+    <nav id="navbar" class="glass-nav">
+        <div class="nav-container">
+            <a href="#" class="logo">Kanniya<span class="logo-accent">Kumari</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#experience">360° View</a></li>
+                <li><a href="#places">Places</a></li>
+                <li><a href="#culture">Culture</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+            <a href="#plan" class="btn btn-glow-small">Plan Trip</a>
+        </div>
+    </nav>
+
+    <!-- SECTION 1 — HERO (3D VIRTUAL ENTRY PORTAL) -->
+    <header id="hero" class="hero-section">
+        <canvas id="particle-canvas"></canvas>
+        <div class="hero-content">
+            <div class="portal-container" id="3d-portal">
+                <!-- Portal visual handled by CSS/JS -->
+                <div class="portal-ring ring-1"></div>
+                <div class="portal-ring ring-2"></div>
+                <div class="portal-ring ring-3"></div>
+            </div>
+            <div class="hero-text">
+                <h1 class="hero-title">Step Into Kanniyakumari</h1>
+                <p class="hero-subtext">A virtual journey to India's southernmost tip —<br>where three seas kiss the sky
+                </p>
+                <div class="hero-actions">
+                    <a href="#experience" class="btn btn-glow">Enter Virtual Space</a>
+                    <a href="sunrise.html" class="btn btn-outline">Watch 360° Sunrise</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 2 — 360° VIRTUAL EXPERIENCE CARDS -->
+    <section id="experience" class="section experience-section">
+        <div class="section-container">
+            <h2 class="section-title">Experience Kanniyakumari Like Never Before</h2>
+            <p class="section-subtext">Immersive digital views from the land's end</p>
+
+            <div class="experience-grid">
+                <!-- Card 1 -->
+                <div class="glass-card experience-card tilt-card" data-tilt>
+                    <div class="card-bg" style="background-image: url('assets/sunrise_ocean.png');"></div>
+                    <div class="card-content">
+                        <h3>🌅 Sunrise at Three Seas</h3>
+                        <p>Watch the sun rise over the meeting point of three oceans in 360°</p>
+                        <a href="sunrise.html" class="btn btn-glow-small"
+                            style="display:inline-block; text-decoration:none;">Enter Sunrise View</a>
+
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="glass-card experience-card tilt-card" data-tilt>
+                    <div class="card-bg" style="background-image: url('assets/sunset_panorama.png');"></div>
+                    <div class="card-content">
+                        <h3>🌇 Sunset Panorama</h3>
+                        <p>Golden hour at Kanniyakumari — sky turns into fire over the sea</p>
+                        <a href="sunset.html" class="btn btn-glow-small" style="display:inline-block; text-decoration:none;">Enter sunset View</a>
+
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="glass-card experience-card tilt-card" data-tilt>
+                    <div class="card-bg" style="background-image: url('assets/vivekananda_rock.png');"></div>
+                    <div class="card-content">
+                        <h3>🏛 Vivekananda Rock — Virtual Walk</h3>
+                        <p>Walk the rock island digitally, explore the meditation hall and mandapam</p>
+                        <a href="vivekananda-rock.html" class="btn btn-glow-small" style="display:inline-block; text-decoration:none;">Start Virtual Walk</a>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="glass-card experience-card tilt-card" data-tilt>
+                    <div class="card-bg" style="background-image: url('assets/bhagavathy_temple.png');"></div>
+                    <div class="card-content">
+                        <h3>🛕 Bhagavathy Amman Temple</h3>
+                        <p>Experience the divine atmosphere of the ancient coastal temple</p>
+                        <a href="bhagavathy-temple.html" class="btn btn-glow-small" style="display:inline-block; text-decoration:none;">Enter Darshan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- SECTION 3 — ABOUT US -->
+    <section id="about" class="section about-section">
+        <div class="section-container">
+            <h2 class="section-title fade-in-section">About Kanniyakumari</h2>
+            <div class="about-grid fade-in-section">
+                <div class="glass-card about-text">
+                    <h3>The Land of Three Seas</h3>
+                    <p>Kanniyakumari is deeply rooted in history, spirituality, and breathtaking natural beauty. It is
+                        the only place in India where you can watch the sunrise and sunset from the exact same spot. For
+                        centuries, it has been a beacon for travelers, saints, and poets.</p>
+                    <p>Our mission is to bring the magic of the southernmost tip of India to the world. Step into the
+                        rich heritage, feel the ocean breeze, and explore the monuments in a stunning virtual space.</p>
+                    <ul class="about-features">
+                        <li>🌊 Meeting point of Bay of Bengal, Arabian Sea & Indian Ocean</li>
+                        <li>🏛 Rich ancient architecture & Tamil heritage</li>
+                        <li>✨ Spiritual legacy of Swami Vivekananda</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="assets/sunset_panorama.png" alt="About Kanniyakumari" class="tilt-card" data-tilt>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4 — VIRTUAL GALLERY (FLOATING 3D GRID) -->
+    <section id="gallery" class="section gallery-section">
+        <div class="section-container">
+            <h2 class="section-title fade-in-section">Glimpses of Kanniyakumari</h2>
+            <div class="gallery-grid fade-in-section">
+                <!-- Grid of images -->
+                <div class="gallery-item glass-card tilt-card"
+                    style="background-image: url('assets/sunrise_ocean.png');" data-img="assets/sunrise_ocean.png"
+                    data-title="Sunrise"
+                    data-desc="Experience the breathtaking view as the sun emerges over the majestic ocean waters.">
+                    <div class="gallery-overlay">Sunrise</div>
+                </div>
+                <div class="gallery-item glass-card tilt-card"
+                    style="background-image: url('assets/sunset_panorama.png');" data-img="assets/sunset_panorama.png"
+                    data-title="Sunset Panorama"
+                    data-desc="Golden hour at Kanniyakumari — watch the sky turn into fire over the sea.">
+                    <div class="gallery-overlay">Sunset</div>
+                </div>
+                <div class="gallery-item glass-card tilt-card"
+                    style="background-image: url('assets/vivekananda_rock.png');" data-img="assets/vivekananda_rock.png"
+                    data-title="Vivekananda Rock Memorial"
+                    data-desc="A sacred monument in the sea holding deep history and spirituality.">
+                    <div class="gallery-overlay">Vivekananda Rock</div>
+                </div>
+                <div class="gallery-item glass-card tilt-card"
+                    style="background-image: url('assets/bhagavathy_temple.png');"
+                    data-img="assets/bhagavathy_temple.png" data-title="Bhagavathy Amman Temple"
+                    data-desc="Experience the divine atmosphere of this ancient 3000-year-old coastal temple.">
+                    <div class="gallery-overlay">Temple</div>
+                </div>
+                <div class="gallery-item glass-card tilt-card"
+                    style="background-image: url('assets/fishing_boats.png');" data-img="assets/fishing_boats.png"
+                    data-title="Traditional Fishing Boats"
+                    data-desc="Colorful traditional fishing boats dotting the crystal clear waters.">
+                    <div class="gallery-overlay">Fishing Boats</div>
+                </div>
+                <div class="gallery-item glass-card tilt-card" style="background-image: url('assets/full_moon.png');"
+                    data-img="assets/full_moon.png" data-title="Full Moon Magic"
+                    data-desc="The magical view of the full moon rising and reflecting over the ocean waves.">
+                    <div class="gallery-overlay">Full Moon</div>
+                </div>
+            </div>
+
+            <!-- Gallery Lightbox Modal -->
+            <div id="gallery-lightbox" class="lightbox-modal">
+                <span class="lightbox-close">&times;</span>
+                <div class="lightbox-content glass-card fade-in-section">
+                    <img id="lightbox-img" src="" alt="Gallery Image">
+                    <h3 id="lightbox-title">Image Title</h3>
+                    <p id="lightbox-desc">Image Description</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5 — PLACES TO VISIT (GLASSMORPHISM CARDS) -->
+    <section id="places" class="section places-section">
+        <div class="section-container">
+            <h2 class="section-title fade-in-section">Places to Visit</h2>
+            <div class="places-grid fade-in-section">
+                <div class="glass-card place-card tilt-card">
+                    <span class="badge">Island · Must Visit</span>
+                    <h3>Vivekananda Rock Memorial</h3>
+                    <p>Meditation hall on an island rock.</p>
+                    <button class="btn btn-outline">Explore</button>
+                </div>
+                <div class="glass-card place-card tilt-card">
+                    <span class="badge">Iconic · Sea-facing</span>
+                    <h3>Thiruvalluvar Statue</h3>
+                    <p>133 feet tall stone sculpture.</p>
+                    <button class="btn btn-outline">Explore</button>
+                </div>
+                <div class="glass-card place-card tilt-card">
+                    <span class="badge">Sacred · Traditional</span>
+                    <h3>Bhagavathy Amman Temple</h3>
+                    <p>3000-year-old sanctuary.</p>
+                    <button class="btn btn-outline">Explore</button>
+                </div>
+                <div class="glass-card place-card tilt-card">
+                    <span class="badge">Heritage · History</span>
+                    <h3>Gandhi Memorial</h3>
+                    <p>Where Mahatma's ashes were kept.</p>
+                    <button class="btn btn-outline">Explore</button>
+                </div>
+                <div class="glass-card place-card tilt-card">
+                    <span class="badge">Natural Wonder</span>
+                    <h3>Sunrise/Sunset Point</h3>
+                    <p>Best viewing galaries.</p>
+                    <button class="btn btn-outline">Explore</button>
+                </div>
+                <div class="glass-card place-card tilt-card">
+                    <span class="badge">Heritage · Nearby</span>
+                    <h3>Padmanabhapuram Palace</h3>
+                    <p>Wooden palace of ancient kings.</p>
+                    <button class="btn btn-outline">Explore</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6 — FESTIVALS & CULTURE -->
+    <section id="culture" class="section culture-section">
+        <div class="section-container">
+            <h2 class="section-title fade-in-section">Traditions of the Southern Tip</h2>
+            <div class="timeline fade-in-section">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-date">April 14</div>
+                    <h4>Puthandu — Tamil New Year</h4>
+                    <p>Grand puja at Bhagavathy Amman temple</p>
+                </div>
+                <div class="timeline-item glass-card">
+                    <div class="timeline-date">May 18</div>
+                    <h4>Chithirai Festival</h4>
+                    <p>Lamp procession along the beach at night</p>
+                </div>
+                <div class="timeline-item glass-card">
+                    <div class="timeline-date">September 11</div>
+                    <h4>Vivekananda Jayanti</h4>
+                    <p>Cultural programmes at Rock Memorial</p>
+                </div>
+                <div class="timeline-item glass-card">
+                    <div class="timeline-date">October</div>
+                    <h4>Navarathri</h4>
+                    <p>Nine nights of classical dance and devotion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7 — LOCAL FOOD -->
+    <section id="food" class="section food-section">
+        <div class="section-container">
+            <h2 class="section-title fade-in-section">Taste of Kanniyakumari</h2>
+            <div class="horizontal-scroll fade-in-section">
+                <div class="food-card glass-card">
+                    <h4>Kanyakumari Fish Curry</h4>
+                </div>
+                <div class="food-card glass-card">
+                    <h4>Kothu Parotta</h4>
+                </div>
+                <div class="food-card glass-card">
+                    <h4>Fresh Coconut Water</h4>
+                </div>
+                <div class="food-card glass-card">
+                    <h4>Banana Chips</h4>
+                </div>
+                <div class="food-card glass-card">
+                    <h4>Neer Dosa</h4>
+                </div>
+                <div class="food-card glass-card">
+                    <h4>Seafood Platter</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8 — HOW TO REACH -->
+    <section id="reach" class="section reach-section">
+        <div class="section-container text-center">
+            <h2 class="section-title fade-in-section">How to Reach</h2>
+            <div class="reach-grid fade-in-section">
+                <div class="reach-card glass-card">
+                    <div class="icon">🚂</div>
+                    <h3>Train</h3>
+                    <p>Kanniyakumari Railway Station</p>
+                </div>
+                <div class="reach-card glass-card">
+                    <div class="icon">🚌</div>
+                    <h3>Bus</h3>
+                    <p>TNSTC buses from all TN cities</p>
+                </div>
+                <div class="reach-card glass-card">
+                    <div class="icon">✈️</div>
+                    <h3>Flight</h3>
+                    <p>Trivandrum Airport (TRV) — 90 km away</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9 — PLAN YOUR TRIP -->
+    <section id="plan" class="section plan-section">
+        <div class="section-container">
+            <div class="form-container glass-card fade-in-section">
+                <h2 class="section-title">Plan Your Kanniyakumari Journey</h2>
+                <form id="trip-form">
+                    <input type="text" placeholder="Your Name" required class="glass-input">
+                    <input type="date" required class="glass-input">
+                    <input type="number" placeholder="Number of Travellers" required class="glass-input">
+                    <select class="glass-input">
+                        <option value="Virtual Only">Virtual Only</option>
+                        <option value="Sunrise Tour">Sunrise Tour</option>
+                        <option value="Temple Visit">Temple Visit</option>
+                        <option value="Full Day">Full Day</option>
+                    </select>
+                    <button type="submit" class="btn btn-glow">Generate My Trip Plan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 10 — FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="#" class="logo footer-logo">Kanniya<span class="logo-accent">Kumari</span></a>
+            <p class="footer-tagline">Southernmost tip of India — Where three seas meet</p>
+            <div class="footer-links">
+                <a href="#about">About</a> | <a href="#gallery">Gallery</a> | <a href="#experience">360° View</a> | <a
+                    href="#plan">Contact</a>
+            </div>
+            <div class="social-icons">
+                <span>Instagram</span> · <span>YouTube</span> · <span>Facebook</span>
+            </div>
+            <p class="copyright">Made with love for Tamil Nadu Tourism</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/particles.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

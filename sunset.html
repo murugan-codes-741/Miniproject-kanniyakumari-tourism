@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunset Panorama | Kanniyakumari</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Photo Sphere Viewer CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/sunset.css">
+    
+</head>
+<body class="sunset-page">
+
+    <!-- Hero Section -->
+    <header class="sunset-hero" style="background-image: url('assets/sunset_panorama.png');">
+        <a href="index.html" class="back-btn">
+            <span>&larr;</span> Back to Home
+        </a>
+        <div class="sunset-hero-content fade-in-section is-visible">
+            <span class="badge-outline">360° Experience Available</span>
+            <h1>Sunset Panorama</h1>
+            <p>Sky turns into fire — golden hour at the edge of India</p>
+        </div>
+    </header>
+
+    <!-- Info Row -->
+    <div class="info-row">
+        <div class="glass-card info-card tilt-card" data-tilt>
+            <h4>Best Time</h4>
+            <p>5:45 PM – 7:00 PM</p>
+        </div>
+        <div class="glass-card info-card tilt-card" data-tilt>
+            <h4>Season</h4>
+            <p>Year-round (best Oct–Feb)</p>
+        </div>
+        <div class="glass-card info-card tilt-card" data-tilt>
+            <h4>Location</h4>
+            <p>Kanniyakumari Beach & Pier</p>
+        </div>
+        <div class="glass-card info-card tilt-card" data-tilt>
+            <h4>Entry</h4>
+            <p>Free</p>
+        </div>
+    </div>
+
+    <!-- 360 Viewer Section -->
+    <section class="section">
+        <div class="section-container">
+            <h2 class="section-title">Sunset 360° Experience</h2>
+            <p class="section-subtext">Feel the warm golden light as the sun melts into the Indian Ocean horizon</p>
+            <div class="viewer-container">
+                <div id="photosphere"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" style="padding-top: 0;">
+        <div class="section-container">
+            <div class="sunset-content-grid">
+                <!-- About Description -->
+                <div class="glass-card">
+                    <h3 style="color: var(--accent-orange); font-size: 2rem; margin-bottom: 1rem;">Where the Sky Catches Fire</h3>
+                    <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8;">
+                        The sunset at Kanniyakumari is unlike any other in the world. As the sun descends into the Arabian Sea, the sky transforms into shades of crimson, gold, and violet. The silhouettes of Vivekananda Rock and Thiruvalluvar Statue against this blazing sky create one of the most photographed scenes in all of India. Local fishermen returning with their boats add to the magic of this daily spectacle.
+                    </p>
+                </div>
+                
+                <!-- Tips Section -->
+                <div class="glass-card">
+                    <h3 style="color: var(--accent-orange); font-size: 2rem; margin-bottom: 1rem;">Traveler Tips</h3>
+                    <ul class="tips-list">
+                        <li>Best view from Kanniyakumari Beach promenade</li>
+                        <li>Vivekananda Rock ferry closes at 4 PM — plan early</li>
+                        <li>Carry your camera — colors change every minute</li>
+                        <li>The pier near the temple gives the widest view</li>
+                        <li>Winter evenings have the clearest skies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nearby Places Row -->
+    <section class="section" style="padding-top: 0;">
+        <div class="section-container">
+            <h2 class="section-title">Nearby Places</h2>
+            <div class="places-grid" style="margin-top: 2rem;">
+                 <div class="glass-card place-card tilt-card">
+                    <h3>Thiruvalluvar Statue</h3>
+                    <p>Towering stone sculpture in the sea.</p>
+                    <button class="btn btn-outline" style="padding: 0.5rem 1rem;">Explore</button>
+                </div>
+                <div class="glass-card place-card tilt-card">
+                    <h3>Sunset View Tower</h3>
+                    <p>An elevated perspective of the shoreline.</p>
+                    <button class="btn btn-outline" style="padding: 0.5rem 1rem;">Explore</button>
+                </div>
+                <div class="glass-card place-card tilt-card">
+                    <h3>Beach Promenade</h3>
+                    <p>Walkway along the meeting point of seas.</p>
+                    <button class="btn btn-outline" style="padding: 0.5rem 1rem;">Explore</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content" style="text-align: center; padding: 2rem 0; margin-top: 2rem;">
+            <a href="index.html" class="logo footer-logo">Kanniya<span class="logo-accent">Kumari</span></a>
+            <p class="footer-tagline" style="color: var(--text-muted); margin-top: 0.5rem;">Southernmost tip of India — Where three seas meet</p>
+        </div>
+    </footer>
+
+    <!-- Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/three/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="js/sunset.js"></script>
+</body>
+</html>
